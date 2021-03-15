@@ -94,6 +94,11 @@ class VendorDetail(models.Model):
         on_delete=models.CASCADE,
         related_name="vendordetail_vendor_id",
     )
+    testEmailField = models.EmailField(
+        max_length=254,
+        null=True,
+        blank=True,
+    )
 
 
 class MySchedule(models.Model):
